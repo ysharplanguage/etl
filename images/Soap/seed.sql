@@ -47,11 +47,11 @@ CREATE TABLE Soap.TelecomTransaction (
 	CONSTRAINT FK_Soap_Address_TelecomTransaction FOREIGN KEY (BillToAddressId) REFERENCES Soap.Address(BillToAddressId)
 );
 
-INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1828776231, 1000035, 'DC2AMAZ-9JPP28E', 1, '2021-06-07 23:30:55.873', '2021-06-07 23:30:57.353');
-INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1828776661, 1000035, 'DC2AMAZ-I2O3DAA', 1, '2021-06-07 23:31:01.257', '2021-06-07 23:31:01.270');
-INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1848596661, 1000035, 'DC2AMAZ-9JPP28E', 1, '2021-06-07 23:33:03.547', '2021-06-07 23:33:03.560');
-INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1948586341, 1000035, 'DC2AMAZ-9JPP28E', 1, '2021-06-08 00:33:08.847', '2021-06-08 00:33:08.853');
-INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (2968584341, 1000035, 'DC2AMAZ-9JPP28E', 1, '2021-06-08 01:12:55.690', '2021-06-08 01:12:57.217');
+INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1828776231, 1BCDE35, 'DC2AMAZ-9JPP28E', 1, '2021-06-07 23:30:55.873', '2021-06-07 23:30:57.353');
+INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1828776661, 1BCDE35, 'DC2AMAZ-I2O3DAA', 1, '2021-06-07 23:31:01.257', '2021-06-07 23:31:01.270');
+INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1848596661, 1BCDE35, 'DC2AMAZ-9JPP28E', 1, '2021-06-07 23:33:03.547', '2021-06-07 23:33:03.560');
+INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1948586341, 1BCDE35, 'DC2AMAZ-9JPP28E', 1, '2021-06-08 00:33:08.847', '2021-06-08 00:33:08.853');
+INSERT INTO Soap.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (2968584341, 1BCDE35, 'DC2AMAZ-9JPP28E', 1, '2021-06-08 01:12:55.690', '2021-06-08 01:12:57.217');
 
 
 INSERT INTO Soap.TaxData (TaxDataID, TaxLogID, Billable, CategoryID, Compliance, TaxAmount, TaxType) VALUES (9046941334, 1828776231, '0', 0, '0', 0, 0);

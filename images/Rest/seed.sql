@@ -47,11 +47,11 @@ CREATE TABLE Rest.TelecomTransaction (
 	CONSTRAINT FK_Rest_Address_TelecomTransaction FOREIGN KEY (BillToAddressId) REFERENCES Rest.Address(BillToAddressId)
 );
 
-INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708776231, 1000035, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 00:30:55.873', '2021-06-08 00:30:57.353');
-INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708776245, 1000035, 'EC2AMAZ-F2O3DAA', 1, '2021-06-08 00:31:01.257', '2021-06-08 00:31:01.270');
-INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708777078, 1000035, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 00:33:03.547', '2021-06-08 00:33:03.560');
-INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708777138, 1000035, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 00:33:08.847', '2021-06-08 00:33:08.853');
-INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708791404, 1000035, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 01:12:55.690', '2021-06-08 01:12:57.217');
+INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708776231, 1FGHI45, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 00:30:55.873', '2021-06-08 00:30:57.353');
+INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708776245, 1FGHI45, 'EC2AMAZ-F2O3DAA', 1, '2021-06-08 00:31:01.257', '2021-06-08 00:31:01.270');
+INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708777078, 1FGHI45, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 00:33:03.547', '2021-06-08 00:33:03.560');
+INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708777138, 1FGHI45, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 00:33:08.847', '2021-06-08 00:33:08.853');
+INSERT INTO Rest.TaxLog (TaxLogID, UserID, HostIPAddress, ProfileId, StartDate, EndDate) VALUES (1708791404, 1FGHI45, 'EC2AMAZ-8JPP28E', 1, '2021-06-08 01:12:55.690', '2021-06-08 01:12:57.217');
 
 
 INSERT INTO Rest.TaxData (TaxDataID, TaxLogID, Billable, CategoryID, Compliance, TaxAmount, TaxType) VALUES (6046941334, 1708776231, '0', 0, '0', 0, 0);
