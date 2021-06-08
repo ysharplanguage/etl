@@ -27,9 +27,9 @@
 
 # Submission details
 1. You need to provide the source code. 
-  1. Clone this github repo
-  2. Create a feature branch (name it whatever you want) off of master.
-  3. Create a src directory under the root directory and add all the source code in there.
+  + Clone this github repo
+  + Create a feature branch (name it whatever you want) off of master.
+  + Create a src directory under the root directory and add all the source code in there.
 2. Provide a design document
-3. *Bonus Points* if you provide a Dockerfile to create an image of your solution.
+3. **Bonus Points** if you provide a Dockerfile to create an image of your solution.
 
