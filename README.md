@@ -21,7 +21,8 @@
  - ETL should be written in C#
  - If the ETL is ran multiple times, it should not create duplicate data in the destination table.
  - The ETL has "read only" access to the source databases.
- - The ETL cannot change the table structure of the destination table. 
 
 # ERD
 ![image](https://user-images.githubusercontent.com/660816/121228627-f8b2a080-c85a-11eb-8db9-fa5b6d932876.png)
+
+#
