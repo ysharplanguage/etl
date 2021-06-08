@@ -1,4 +1,4 @@
-# etl
+# Problem Statement
 
 1. Source database : You are given a Dockerfile to build a postgres image. 
 There is a seed.sql that has DDL and DML statements to seed the data for the source   database. Build the image using the provided Dockerfile and launch a container and name it as Rest. Please see below a ERD diagram to see the relationships between the entities from the source database.
@@ -15,3 +15,6 @@ There is a seed.sql that has DDL and DML statements to seed the data for the sou
  - ETL should be written in C#
 
  - If the ETL is ran multiple times, it should not create duplicate data in the destination table.
+
+# ERD
+![image](https://user-images.githubusercontent.com/660816/121228627-f8b2a080-c85a-11eb-8db9-fa5b6d932876.png)
