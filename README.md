@@ -1,10 +1,16 @@
 # Problem Statement
 
-1. Source database : You are given a Dockerfile to build a postgres image. 
-There is a seed.sql that has DDL and DML statements to seed the data for the source   database. Build the image using the provided Dockerfile and launch a container and name it as Rest. Please see below a ERD diagram to see the relationships between the entities from the source database.
+1. Source database : There are two source databases named Rest and Soap.
+ You are given a Dockerfile to build a postgres image for both these databases.
+ There is a seed.sql that has DDL and DML statements to seed the data for the source databases. 
+  - For Rest, build the image using the provided Dockerfile and launch a container and name it as Rest. 
+  - For Soap, build the image using the provided Dockerfile and launch a container and name it as Soap.
+  Please see below a ERD diagram to see the relationships between the entities from the source database.
 
 2. Destination database: You are given a Dockerfile to build a postgres image for the destination database. 
-3. A seed.sql file is also provided that contains DDL statement to create the destination database.<br/>
+3. A seed.sql file is also provided that contains DDL statement to create the destination database.
+   Create an image using the provided Docker file and launch a container named DataWarehouse.
+   
 4. Write a program that does the following
 
  - extracts all the data from all the tables from the source database.
