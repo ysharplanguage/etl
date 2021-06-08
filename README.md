@@ -25,4 +25,11 @@
 # ERD
 ![image](https://user-images.githubusercontent.com/660816/121228627-f8b2a080-c85a-11eb-8db9-fa5b6d932876.png)
 
-#
+# Submission details
+1. You need to provide the source code. 
+  1. Clone this github repo
+  2. Create a feature branch (name it whatever you want) off of master.
+  3. Create a src directory under the root directory and add all the source code in there.
+2. Provide a design document
+3. *Bonus Points* if you provide a Dockerfile to create an image of your solution.
+
