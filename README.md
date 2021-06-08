@@ -1,5 +1,5 @@
 # Problem Statement
-### You have to write a ETL process to move data from source databases to the destination databases.
+### You have to write a ETL process to move data from source databases to the destination database.
 1. Source database : There are two source databases named Rest and Soap.
  You are given a Dockerfile to build a postgres image for both these databases.
  There is a seed.sql that has DDL and DML statements to seed the data for the source databases. 
