@@ -1,13 +1,13 @@
 # Problem Statement
-
+### You have to write a ETL process to move data from source databases to the destination database.
 1. Source database : There are two source databases named Rest and Soap.
  You are given a Dockerfile to build a postgres image for both these databases.
  There is a seed.sql that has DDL and DML statements to seed the data for the source databases. 
-  - For Rest, build the image using the provided Dockerfile and launch a container and name it as Rest. 
-  - For Soap, build the image using the provided Dockerfile and launch a container and name it as Soap.
+  - For [Rest](https://github.com/chax0r/etl/tree/master/images/Rest), build the image using the provided Dockerfile and launch a container and name it as Rest. 
+  - For [Soap](https://github.com/chax0r/etl/tree/master/images/Soap), build the image using the provided Dockerfile and launch a container and name it as Soap.
   Please see below a ERD diagram to see the relationships between the entities from the source database.
 
-2. Destination database: You are given a Dockerfile to build a postgres image for the destination database. 
+2. Destination database: You are given a [Dockerfile](https://github.com/chax0r/etl/tree/master/images/Warehouse) to build a postgres image for the destination database. 
 3. A seed.sql file is also provided that contains DDL statement to create the destination database.
    Create an image using the provided Docker file and launch a container named DataWarehouse.
 
@@ -27,9 +27,9 @@
 
 # Submission details
 1. You need to provide the source code. 
-  1. Clone this github repo
-  2. Create a feature branch (name it whatever you want) off of master.
-  3. Create a src directory under the root directory and add all the source code in there.
+  + Clone this github repo
+  + Create a feature branch (name it whatever you want) off of master.
+  + Create a src directory under the root directory and add all the source code in there.
 2. Provide a design document
-3. *Bonus Points* if you provide a Dockerfile to create an image of your solution.
+3. **Bonus Points** if you provide a Dockerfile to create an image of your solution.
 
