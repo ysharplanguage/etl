@@ -14,7 +14,6 @@ CREATE TABLE Warehouse.Transactions (
 	TaxAmount numeric(32,16) NULL,
 	TaxType varchar NOT NULL,
     TelecomTransactionId bigserial NOT NULL,
-	TaxLogId bigserial NOT NULL,
 	Charge numeric(32,16) NULL,
 	Date timestamp NULL,
 	InvoiceNumber varchar NULL,

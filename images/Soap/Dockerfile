@@ -1,5 +1,5 @@
-FROM postgres:11.5-alpine
+FROM postgres:13.3
 
-COPY 001_data.sql /docker-entrypoint-initdb.d/001_data.sql
+COPY seed.sql /docker-entrypoint-initdb.d/001_data.sql
 
 ENV PGDATA=/data
