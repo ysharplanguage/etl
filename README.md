@@ -31,8 +31,9 @@
   + Create a feature branch (name it whatever you want) off of master.
   + Create a src directory under the root directory and add all the source code in there.
   + Push all your changes to the forked repo.
+  + **Do not** use this repo to create any branches.
 2. Project should have unit tests (you can use any unit test framework)
-3. Provide a design document
+3. Provide a design document and also add any assumptions you have made to develop your solution.
 4. Provide clear instructions describing how to run your solution.
 5. **Bonus Points** if you provide a Dockerfile to create an image of your solution. Please add the Dockerfile inside the images directory
 6. Email the link to your forked repo containing the solution.
