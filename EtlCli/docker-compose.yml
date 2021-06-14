@@ -1,8 +1,86 @@
 version: '3.4'
 
 services:
+  pgadmin:
+    image: "dpage/pgadmin4"
+    environment:
+        PGADMIN_DEFAULT_EMAIL: ysharp.design@gmail.com
+        PGADMIN_DEFAULT_PASSWORD: pgadmin
+        PGADMIN_CONFIG_SERVER_MODE: "False"
+        PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "6432:80"
+    restart: unless-stopped
+
+  diamonds:
+    image: diamonds
+    build:
+      context: ./Databases/Diamonds
+      dockerfile: Dockerfile
+    ports:
+      - 7432:5432
+    environment:
+        POSTGRES_DB: "postgres"
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "dbadmin"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  gold:
+    image: gold
+    build:
+      context: ./Databases/Gold
+      dockerfile: Dockerfile
+    ports:
+      - 8432:5432
+    environment:
+        POSTGRES_DB: "postgres"
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "dbadmin"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  warehouse:
+    image: warehouse
+    build:
+      context: ./Databases/Warehouse
+      dockerfile: Dockerfile
+    ports:
+      - 9432:5432
+    environment:
+        POSTGRES_DB: "postgres"
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "dbadmin"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
   etlcli:
-    image: ${DOCKER_REGISTRY-}etlcli
+    image: etlcli
     build:
       context: .
       dockerfile: EtlCli/Dockerfile
+    links:
+      - pgadmin
+      - diamonds
+      - gold
+      - warehouse
+    depends_on:
+      - "pgadmin"
+      - "diamonds"
+      - "gold"
+      - "warehouse"
+    networks:
+      - mylocalnetwork
+
+volumes:
+  pgadmin:
+  pgdata:
+
+networks:
+  mylocalnetwork:
+    driver: bridge

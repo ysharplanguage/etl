@@ -6,6 +6,12 @@
     <ProjectGuid>5e4d91a6-acf8-4f9d-9ec7-3c10851dabf4</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Databases\Diamonds\Dockerfile" />
+    <None Include="Databases\Diamonds\seed.sql" />
+    <None Include="Databases\Gold\Dockerfile" />
+    <None Include="Databases\Gold\seed.sql" />
+    <None Include="Databases\Warehouse\Dockerfile" />
+    <None Include="Databases\Warehouse\seed.sql" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
