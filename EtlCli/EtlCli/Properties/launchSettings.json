@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EtlCli": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

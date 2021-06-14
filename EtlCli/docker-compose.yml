@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  etlcli:
+    image: ${DOCKER_REGISTRY-}etlcli
+    build:
+      context: .
+      dockerfile: EtlCli/Dockerfile
