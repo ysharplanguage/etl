@@ -11,7 +11,7 @@ services:
     volumes:
       - pgadmin:/var/lib/pgadmin
     ports:
-      - "6432:80"
+      - 6432:80
     restart: unless-stopped
 
   diamonds:
